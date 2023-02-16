@@ -10,11 +10,11 @@
 
 body{
     @include background();
-    color: #fff;
+    color: set-text-color($primary-color);
     background: $primary-color;
     height: 100%;
     margin:0;
-    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
 }
 
@@ -52,11 +52,12 @@ main{
     padding: 4rem;
     height: 100%;
 
+
     .icons{
         margin-top: 1rem;
         a{
             padding: 0.4rem;
-
+            color: #000133;
             &:hover{
                 color: $secondary-color;
                 @include easeOut();
@@ -71,3 +72,49 @@ main{
         }
     }
 }
+
+.about-info{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+    'bioimage bio bio'
+    'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio-image{
+        grid-area: bioimage;
+        margin: auto;
+        border-radius: 50%;
+        border: $secondary-color 3px solid;
+    }
+    
+    .bio{
+        grid-area: bio;
+        font-size: 1.5rem;
+    }
+    
+    .job-1{
+        grid-area: job1;
+    }
+    .job-2{
+        grid-area: job2;
+    }
+    .job-3{
+        grid-area: job3;
+    }
+    
+    .job{
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: solid 3px;
+        border-color: lighten( $secondary-color, 5);
+
+        &:hover{
+            @include easeOut();
+            border-bottom: solid 7px;
+            border-color: $secondary-color;
+        }
+
+    }
+}
+

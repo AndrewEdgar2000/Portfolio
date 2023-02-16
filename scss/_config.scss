@@ -1,8 +1,8 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #F0F8FF;
+$secondary-color: #1805db;
 $show-home-image: true;
-$home-image: url(../../dist/img/background.jpg);
-$background-opacity: 0.5;
+$home-image: url(../../dist/img/background4.jpg);
+$background-opacity: 0.2;
 $portrait-image: url(../../dist/img/portrait3.jpg);
 
 
@@ -31,6 +31,17 @@ $portrait-image: url(../../dist/img/portrait3.jpg);
         }
     }
 }
+
+//Set Text Colour
+@function set-text-color($color){
+    @if(lightness($color) > 40){
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}
+
+
 
 //Media Query Mixins
 @mixin mediaSm{

@@ -1,10 +1,15 @@
 //Widescreens
 @include mediaXL(){
     
+    main{
+        align-items: center;
+        text-align: center;
+    }
+
 }
 
 //Large Screens (Desktops)
-@include mediaXL(){
+@include mediaLg(){
 
 }
 

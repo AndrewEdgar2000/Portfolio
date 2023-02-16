@@ -3,7 +3,7 @@
 .menu-btn{
     position: absolute;
     z-index: 3;
-    right: 35px;
+    left: 35px;
     top: 35px;
     cursor: pointer;
     @include easeOut;
@@ -12,7 +12,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
 
@@ -105,6 +105,7 @@
 
         &.current > a{
             color: $secondary-color;
+            font-weight: bold;
         }
     }
 
@@ -113,8 +114,8 @@
         position: relative;
         font-size: 30px;
         padding: 1rem 0;
-        font-weight: 300;
-        color: #fff;
+        font-weight: 350;
+        color: set-text-color($primary-color);
         text-decoration: none;
         text-transform: uppercase;
         @include easeOut();
@@ -147,7 +148,6 @@
     }
 
 }
-
 
 
 //Delay each nav item
