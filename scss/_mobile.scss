@@ -1,16 +1,21 @@
 //Widescreens
 @include mediaXL(){
     
-    main{
+    #home{
         align-items: center;
         text-align: center;
     }
+
+    .about-info{
+        text-align: left;
+    }
+
 
 }
 
 //Large Screens (Desktops)
 @include mediaLg(){
-
+    
 }
 
 //Medium Screens (Tablets)
@@ -53,6 +58,19 @@
             height: 150px;
         }
     }
+
+    .about-info{
+        grid-template-areas: 
+        'bioimage'
+        'bio'
+        'job1'
+        'job2'
+        'job3';
+
+        grid-template-columns: 1fr;
+    }
+
+
 }
 
 //Small Screens (Smartphones)

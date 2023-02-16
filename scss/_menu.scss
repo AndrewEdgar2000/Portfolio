@@ -8,6 +8,8 @@
     cursor: pointer;
     @include easeOut;
 
+    animation: 1s ease-out 0s 1 slideInFromRight;
+
     .btn-line{
         width: 28px;
         height: 3px;
@@ -109,6 +111,13 @@
         }
     }
 
+    //Delay each nav item
+    @for $x from 1 through 4 {
+        .nav-item:nth-child(#{$x}){
+            transition-delay: $x * 0.1s;
+        }
+    }
+
     .nav-link{
         display: inline-block;
         position: relative;
@@ -150,9 +159,4 @@
 }
 
 
-//Delay each nav item
-@for $x from 1 through 4 {
-    .nav-item:nth-child(#{$x}){
-        transition-delay: $x * 0.1s;
-    }
-}
+
