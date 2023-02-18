@@ -54,3 +54,21 @@ function toggleMenu(){
        }, 500);
     });
  })();
+
+
+
+//  function sendEmail(){
+//     Email.send({
+//         Host : "smtp.mail.com",
+//         Username : "edgar.andrew@mail.com",
+//         Password : "password",
+//         To : 'edgar.andrew@mail.com',
+//         From : document.getElementById("email").value,
+//         Subject : "New Contact Form Enquiry",
+//         Body : "And this is the body"
+//     }).then(
+//       message => alert(message)
+//     );
+//  }
+
+ 
