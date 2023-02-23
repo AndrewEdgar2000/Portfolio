@@ -21,6 +21,15 @@
 //Medium Screens (Tablets)
 @include mediaMd(){
 
+
+    .contact-right{
+        height: 50vh;
+    }
+    .contact-left{
+        height: 50vh;
+    }
+
+
     main{
         align-items: center;
         text-align: center;
