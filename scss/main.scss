@@ -387,6 +387,18 @@ main{
 
 #contact {
 
+    .sm-heading{
+        margin-bottom: 1rem;
+    }
+
+    .contact-text h3{
+        display: flex;
+        justify-content: left;
+        color: $secondary-color;
+        font-weight: bold;
+        text-align: left;
+
+    }
     .container{
         min-height: 50vh;
         display: flex;
@@ -415,6 +427,13 @@ main{
         justify-content: center;
         align-items: center;
         border-radius: 50%;
+        box-shadow: 0 2px 5px rgba($color: #000, $alpha: 0.3);
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+        @include easeOut();
+
+        &:hover{
+            transform: scale(1.5);
+        }
     }
 
     .contact-text {
@@ -422,22 +441,41 @@ main{
         margin-left: 20px;
         font-size: 16px;
         flex-direction: column;
-
-        & > h3{
-            color: rgba(lighten($secondary-color, 5), .8);
-            font-weight: bold;
-        }
+        animation: 1s ease-out 0s 1 slideInFromRight;
     }
 
     .contact-form{
-        width: 40%;
+        width: 90%;
         padding: 20px;
         background: #fff;
+        border-radius: 30px ;
+        box-shadow: 0 2px 5px rgba($color: #000, $alpha: 0.3);
+        animation: 1s ease-out 0s 1 slideInFromBottom;
 
-        & .contact-box{
+        & .input-box{
             position: relative;
             width: 100%;
             margin-top: 10px;
+
+            & > input , textarea{
+                width: 100%;
+                padding: 5px 0;
+                font-size: 16px;
+                border: none;
+                border-bottom: 2px solid rgba(lighten($secondary-color, 40), .8);
+                outline: none;
+                resize: none;
+                @include easeOut();
+                &:focus{
+                    border-bottom: 2px solid $secondary-color;
+                    transform: translate(-10px);
+                }
+                &:hover {
+                    border-bottom: 2px solid $secondary-color;
+                    transform: translate(-10px);
+                }
+            }
+
         }
 
         & > form h2 {
@@ -445,6 +483,24 @@ main{
             font-weight: bold;
         }
     }
+
+    button{
+        background:$secondary-color ;
+        color: $primary-color;
+        border: none;
+        padding: .5em .75em; 
+        border-radius: .25em;
+        cursor: pointer;
+        width: 100%;
+        margin: 5px auto 0;
+        border-radius: 30px;
+        @include easeOut();
+    }
+
+    button:hover, button:focus{
+        background: $primary-color;
+        color: $secondary-color;
+     }
 
 }
 

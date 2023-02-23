@@ -15,7 +15,9 @@
 
 //Large Screens (Desktops)
 @include mediaLg(){
-    
+    .contact-form{
+        margin-left: 20px;
+    }
 }
 
 //Medium Screens (Tablets)
@@ -80,6 +82,13 @@
     }
 
 
+    .contact-form{
+        width: 100%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    
 }
 
 //Small Screens (Smartphones)
