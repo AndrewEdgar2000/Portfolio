@@ -341,8 +341,11 @@ main {
     align-items: center;
     text-align: center; }
     main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; } }
+      text-align: left;
+      justify-content: left; }
+    main .sm-heading {
+      text-align: left;
+      justify-content: left; } }
 
 .card, .card-shadow {
   background: #fff;
