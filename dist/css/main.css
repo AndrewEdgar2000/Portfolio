@@ -343,11 +343,13 @@ main {
     main .lg-heading {
       text-align: left;
       justify-content: left;
-      margin-left: -3rem; }
+      margin-left: -3.5rem; }
     main .sm-heading {
       text-align: left;
       justify-content: left;
-      margin-left: -3rem; } }
+      margin-left: -3.5rem; }
+  #contact .icon {
+    margin-left: -5rem; } }
 
 .card, .card-shadow {
   background: #fff;
