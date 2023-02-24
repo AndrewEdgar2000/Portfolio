@@ -342,10 +342,12 @@ main {
     text-align: center; }
     main .lg-heading {
       text-align: left;
-      justify-content: left; }
+      justify-content: left;
+      margin-left: -3rem; }
     main .sm-heading {
       text-align: left;
-      justify-content: left; } }
+      justify-content: left;
+      margin-left: -3rem; } }
 
 .card, .card-shadow {
   background: #fff;
