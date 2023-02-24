@@ -406,6 +406,11 @@ main{
 
 #contact {
 
+
+    p{
+        color: #000;
+    }
+
     .sm-heading{
         margin-bottom: 1rem;
     }
@@ -458,6 +463,7 @@ main{
     .contact-text {
         display: flex;
         margin-left: 20px;
+        color: #000;
         font-size: 16px;
         flex-direction: column;
         animation: 1s ease-out 0s 1 slideInFromRight;
