@@ -290,6 +290,7 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
     align-items: flex-start;
+    text-align: center;
 }
 
 .card-header{

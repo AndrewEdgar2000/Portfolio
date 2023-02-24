@@ -354,7 +354,8 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
-  align-items: flex-start; }
+  align-items: flex-start;
+  text-align: center; }
 
 .card-header {
   font-size: 1.5rem;
