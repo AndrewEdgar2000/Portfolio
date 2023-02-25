@@ -1,45 +1,68 @@
 @import 'config.scss';
 //Menu Button
-.menu-btn{
-    position: absolute;
-    z-index: 3;
-    left: 35px;
-    top: 35px;
-    cursor: pointer;
-    @include easeOut;
-
-    animation: 1s ease-out 0s 1 slideInFromRight;
-
-    .btn-line{
-        width: 28px;
-        height: 3px;
-        margin: 0 0 5px 0;
-        background: set-text-color($primary-color);
+.buttons{
+    .menu-btn{
+        position: absolute;
+        z-index: 3;
+        left: 35px;
+        top: 35px;
+        cursor: pointer;
         @include easeOut;
-    }
 
-    //Rotate Into X with menu lines
-    &.close{
-        transform: rotate(180deg);
+        animation: 1s ease-out 0s 1 slideInFromRight;
 
         .btn-line{
-            //Line 1 - Rotate
-            &:nth-child(1){
-                transform: rotate(45deg) translate(5px, 5px);
-            }
-            //Line 2 - Hide
-            &:nth-child(2){
-                // background-color: yellow;
-                opacity: 0;
-            }
-            //Line 3 Rotate
-            &:nth-child(3){
-                transform: rotate(-45deg) translate(7px, -6px);
+            width: 28px;
+            height: 3px;
+            margin: 0 0 5px 0;
+            background: set-text-color($primary-color);
+            @include easeOut;
+        }
+
+        //Rotate Into X with menu lines
+        &.close{
+            transform: rotate(180deg);
+
+            .btn-line{
+                //Line 1 - Rotate
+                &:nth-child(1){
+                    transform: rotate(45deg) translate(5px, 5px);
+                }
+                //Line 2 - Hide
+                &:nth-child(2){
+                    // background-color: yellow;
+                    opacity: 0;
+                }
+                //Line 3 Rotate
+                &:nth-child(3){
+                    transform: rotate(-45deg) translate(7px, -6px);
+                }
             }
         }
     }
+        
+        .back-icon{ 
+            margin-left:2.2rem;
+            margin-top: 5rem;
+            animation: 1s ease-out 0s 1 slideInFromBottom; 
+
+            .fa{
+                -webkit-transition: 0.6s ease-out;
+                -moz-transition:  0.6s ease-out;
+                transition:  0.6s ease-out;
+                &:hover {
+                    cursor: pointer;
+                    -webkit-transform: rotateZ(-720deg);
+                    -moz-transform: rotateZ(-720deg);
+                    transform: rotateZ(-720deg);
+            }
+        }
+          
+    }
 
 }
+
+
 
 //Menu Overlay
 .menu{

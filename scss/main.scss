@@ -70,12 +70,15 @@ main{
         //     transform: rotateY(360deg);
         // }
 
-        a{
+        .fa-brands{
             padding: 0.4rem;
             @include easeOut();
-            color: #000133;
+            color: #000;
             &:hover{
                 color: $secondary-color;
+                -webkit-transform: rotateZ(-720deg);
+                -moz-transform: rotateZ(-720deg);
+                transform: rotateZ(-720deg);
             }
         }
     }

@@ -1,4 +1,4 @@
-.menu-btn {
+.buttons .menu-btn {
   position: absolute;
   z-index: 3;
   left: 35px;
@@ -6,20 +6,34 @@
   cursor: pointer;
   transition: all 0.6s ease-in-out;
   animation: 1s ease-out 0s 1 slideInFromRight; }
-  .menu-btn .btn-line {
+  .buttons .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: #000;
     transition: all 0.6s ease-in-out; }
-  .menu-btn.close {
+  .buttons .menu-btn.close {
     transform: rotate(180deg); }
-    .menu-btn.close .btn-line:nth-child(1) {
+    .buttons .menu-btn.close .btn-line:nth-child(1) {
       transform: rotate(45deg) translate(5px, 5px); }
-    .menu-btn.close .btn-line:nth-child(2) {
+    .buttons .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
-    .menu-btn.close .btn-line:nth-child(3) {
+    .buttons .menu-btn.close .btn-line:nth-child(3) {
       transform: rotate(-45deg) translate(7px, -6px); }
+
+.buttons .back-icon {
+  margin-left: 2.2rem;
+  margin-top: 5rem;
+  animation: 1s ease-out 0s 1 slideInFromBottom; }
+  .buttons .back-icon .fa {
+    -webkit-transition: 0.6s ease-out;
+    -moz-transition: 0.6s ease-out;
+    transition: 0.6s ease-out; }
+    .buttons .back-icon .fa:hover {
+      cursor: pointer;
+      -webkit-transform: rotateZ(-720deg);
+      -moz-transform: rotateZ(-720deg);
+      transform: rotateZ(-720deg); }
 
 .menu {
   position: fixed;
@@ -157,12 +171,15 @@ main {
   main .icons {
     animation: 1s ease-out 0s 1 slideInFromLeft;
     margin-top: 1rem; }
-    main .icons a {
+    main .icons .fa-brands {
       padding: 0.4rem;
       transition: all 0.6s ease-in-out;
-      color: #000133; }
-      main .icons a:hover {
-        color: #1805db; }
+      color: #000; }
+      main .icons .fa-brands:hover {
+        color: #1805db;
+        -webkit-transform: rotateZ(-720deg);
+        -moz-transform: rotateZ(-720deg);
+        transform: rotateZ(-720deg); }
   main#home {
     overflow: hidden; }
     main#home h1 {
