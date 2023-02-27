@@ -45,7 +45,7 @@ $portrait-image: url("../../dist/img/portrait3.jpg");
 
 //Media Query Mixins
 @mixin mediaSm{
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 580px){
         @content;
     }
 }
