@@ -92,8 +92,21 @@ main{
 }
 
 
-.about-info{
+.about-info {
 
+
+    .fa-brands{
+        
+        @include easeOut();
+
+        &:hover{
+            color: $secondary-color;
+            -webkit-transform: rotateZ(-720deg);
+            -moz-transform: rotateZ(-720deg);
+            transform: rotateZ(-720deg);
+        }
+        
+    }
 
     h3{
         color: $secondary-color;
@@ -113,8 +126,8 @@ main{
     .bio-image{
         grid-area: bioimage;
         margin: auto;
-        border-radius: 50%;
-        border: $secondary-color 3px solid;
+        border-radius: 30%;
+        // border: $secondary-color ;
         animation: 1s ease-out 0s 1 slideInFromLeft;
         @include easeOut();
         &:hover{
@@ -158,6 +171,8 @@ main{
 
     }
 }
+
+
 
 //Delay for each Job Item
 // @for $x from 1 through 3 {

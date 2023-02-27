@@ -38,28 +38,89 @@
         </div>
         <ul class="menu-nav">
           <li class="nav-item">
-            <a href="../../dist/index.html" class="nav-link"> Home </a>
+            <a href="index.html" class="nav-link"> Home </a>
           </li>
           <li class="nav-item">
-            <a href="../../dist/about.html" class="nav-link"> About Me </a>
+            <a href="about.html" class="nav-link"> About Me </a>
           </li>
           <li class="nav-item current">
-            <a href="../../dist/work.html" class="nav-link"> My Work </a>
+            <a href="work.html" class="nav-link"> My Work </a>
           </li>
           <li class="nav-item">
-            <a href="../../dist/contact.html" class="nav-link">
-              How To Reach Me
-            </a>
+            <a href="contact.html" class="nav-link"> How To Reach Me </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main id="about">
+    <main id="about-info">
       <!-- Animated Cursor -->
       <div class="cursor"></div>
       <h1 class="lg-heading">Project <span class="text-secondary">#2</span></h1>
-      <h2 class="sm-heading">Pneumonia Detection Using Deep Learning</h2>
+      <h2 class="sm-heading"></h2>
+
+      <div class="about-info">
+        <img src="img/cvv.png" alt="Andrew Edgar" class="bio-image" />
+
+        <div class="bio">
+          <h3 class="text-secondary">Summary</h3>
+          This project was an evaluation/ test of different kinds of models for
+          the identification of pneumonia, trained on chest X-ray images.
+        </div>
+
+        <div class="job job-1">
+          <h3>Solution</h3>
+          <p>
+            In the data pre-processing section there was not enough data in the
+            validation set. This problem was solved by splitting the entire
+            training dataset into both training and validation, where 80% of the
+            training set was used for the new training set, and the remaining
+            20% was used for the validation set.
+          </p>
+          I used the method ‘stratify’ in order to maintain the ratio of
+          positive to negative diagnosis results. The ratios have been presented
+          in a visualisation to prove the ratios are staying consistent. The
+          image size used for the images was 124X124. This is not only due to
+          the ram requirements being too high for my machine when ran at
+          224X224, but from research done on image size affecting model
+          performance states that when using a dataset that Is smaller than an
+          ‘ImageNet’ scale network can benefit from a smaller image size. Each
+          model was run with the batch size of 32, for 25 epochs. The function
+          ‘ReduceLROnPlateau’ was used when training the models in order to
+          change the learning rates throughout training.
+          <p>
+            From the results collected the best performing model for Accuracy
+            was ResNet152V2 after fine tuning, with an accuracy score of 88.6%
+            For future work drawing parallels to the research reviewed in
+            section one. Developing an algorithm which can localize specific
+            parts of the lung that have been affected by pneumonia would be a
+            great help to not only identify the diagnosis of pneumonia, but also
+            can display the problem areas in urgent need of care.
+          </p>
+        </div>
+        <div class="job job-2">
+          <h3>Skills Used</h3>
+          <ul>
+            <li>Python</li>
+            <li>TensorFlow</li>
+            <li>OpenCV</li>
+            <li>NumPy</li>
+            <li>MatPlotLib</li>
+            <li>Pandas</li>
+            <li>Data Pre-Processing</li>
+            <li>Convolutional Neural Network</li>
+            <li>Transfer Learning</li>
+            <li>Model Fine Tuning</li>
+          </ul>
+          <h3>More Info</h3>
+          <ul style="list-style-type: none">
+            <li>
+              The source code for this project can be found in my GitHub page.
+              <div class="icon"><i class="fa-brands fa-github fa-3x"></i></div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
     <footer id="main-footer">
       <h3>Technologies Used</h3>

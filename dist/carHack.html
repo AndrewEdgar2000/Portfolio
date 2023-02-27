@@ -57,14 +57,74 @@
       </nav>
     </header>
 
-    <main id="about">
+    <main id="about-info">
       <!-- Animated Cursor -->
       <div class="cursor"></div>
       <h1 class="lg-heading">Project <span class="text-secondary">#1</span></h1>
-      <h2 class="sm-heading">
-        Application of Software Defined Radio in Relation to Wirelessly Hacking
-        Remote Keyless Entry Systems
-      </h2>
+      <h2 class="sm-heading"></h2>
+
+      <div class="about-info">
+        <img src="img/demo.jpg" alt="Andrew Edgar" class="bio-image" />
+
+        <div class="bio">
+          <h3 class="text-secondary">Summary</h3>
+          My honours project for the final year of my degree was an interesting
+          deep dive into how radio frequencies transmitted from car key fobs can
+          be manipulated and exploited to gain unauthorised access to the
+          vehicle. The project allowed me to experiment with both hardware and
+          software.
+        </div>
+
+        <div class="job job-1">
+          <h3>Solution</h3>
+          <p>
+            Rolling codes, also known as hopping codes, are a security feature
+            used in wireless communication systems such as car key fobs and
+            garage door openers. They work by using an algorithm to generate a
+            unique code each time a device is activated, which is different from
+            the previous code. This prevents an attacker from intercepting and
+            replaying the same code to gain unauthorized access to the system.
+          </p>
+          <p>
+            The solution I implemented is known as a Jam-Listen-Replay attack.
+            This type of attack utilises a signal jammer which blocks the signal
+            being successfully transmitted from the key fob to the car. While
+            the signal is being jammed, the capturing device is recording the
+            signals being transmitted to the vehicle. Once the signal jammer has
+            been turned off, the car key will work again, although when the
+            attacker returns they can simply replay the recorded signal and gain
+            unauthorised access since the recorded signal has never been seen by
+            the car.
+          </p>
+        </div>
+        <div class="job job-2">
+          <h3>Skills Used</h3>
+          <ul>
+            <li>Raspberry Pi</li>
+            <li>Raspberry Pi OS</li>
+            <li>Linux</li>
+            <li>Arduino</li>
+            <li>Radio Spectrum</li>
+            <li>SDR Sharp</li>
+            <li>Signal Amplification</li>
+            <li>Hardware Soldering</li>
+            <li>SSH</li>
+            <li>Network Management</li>
+          </ul>
+          <h3>More Info</h3>
+          <ul style="list-style-type: none">
+            <li>
+              A further detailed explanation can be found on my YouTube channel
+              <div class="icon">
+                <i
+                  onclick="location.href='https://www.youtube.com/channel/UCEEotoWOQS3FiuhrKDVOvdw'"
+                  class="fa-brands fa-youtube fa-3x"
+                ></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </main>
     <footer id="main-footer">
       <h3>Technologies Used</h3>

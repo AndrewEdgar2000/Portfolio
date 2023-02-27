@@ -192,14 +192,20 @@ main {
   grid-gap: 30px;
   grid-template-areas: 'bioimage bio' 'job1 job2' 'job1 job3';
   text-align: left; }
+  .about-info .fa-brands {
+    transition: all 0.6s ease-in-out; }
+    .about-info .fa-brands:hover {
+      color: #1805db;
+      -webkit-transform: rotateZ(-720deg);
+      -moz-transform: rotateZ(-720deg);
+      transform: rotateZ(-720deg); }
   .about-info h3 {
     color: #1805db;
     font-weight: bold; }
   .about-info .bio-image {
     grid-area: bioimage;
     margin: auto;
-    border-radius: 50%;
-    border: #1805db 3px solid;
+    border-radius: 30%;
     animation: 1s ease-out 0s 1 slideInFromLeft;
     transition: all 0.6s ease-in-out; }
     .about-info .bio-image:hover {
